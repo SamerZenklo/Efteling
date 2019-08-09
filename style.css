@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  height: 3000px;
-  font-family: cursive;
-  height: 6000px;
+  font-family: cursive;  
 }
 a {
   text-decoration: none;
@@ -53,52 +51,6 @@ a {
   justify-content: space-between;
   align-items: baseline;
 }
-/* .nav-bar .container .main-menu a {
-  font-size: 1.5rem;
-} */
-/* .tickets {
-  
-  position: relative;
-  padding: 1% 4%;
-  background-color: brown;
-  color: white;
-  border-radius: 5px;
-  text-align: center;
-  /* height: 150px; 
-} */
-/* .tickets a:before {
-  display: inline-block;
-  content: "";
-  height: 70%;
-  width: 95%;
-  top: 0%;    
-  left: 0;
-  margin: 0 auto;
-  border: 3px solid #b8b7b7;
-  position: absolute;
-  opacity: 0.2;
-  border-radius: 5px;
-  outline-offset: 0px;
-  outline: 20px solid blue;
-  
-  
-} */
-/* .tickets a {
-  margin: 1%;
-  width:80%;
-  height:80%;;
-  display: inline-block;
-  position: absolute;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  padding: .5rem 1rem;
-  border-radius: 5px;
-  border: 1px solid #b8b7b7;
-  box-shadow: 0 0 0px 10px lightblue;
-  
-} */
 .video {
   position: relative;
   max-width: 100%;
@@ -214,16 +166,13 @@ section .container h2 {
 .btn {
     position: relative;    
     border-radius: 5px;
-    border: 1px solid #ede5d5;    
-    font-family: ErnestineWeb-Bold,sans-serif;
+    border: 1px solid #ede5d5;        
     font-size: 20px;
-    line-height: 1.5;
-    padding-bottom: 8px;
-    padding-top: 10px;    
+    line-height: 1.5;    
     background-color: #b71234;
     border-color: #b71234;
     color: #fff;
-    padding: .5rem 3rem;
+    padding: .5rem 3rem;    
 }
 article {
   position: relative;
@@ -272,9 +221,6 @@ article .container{
 .child > *{
   padding: 1rem;
 }
-.child1 {
-
-}
 .child2 {
   display: none;
 }
@@ -311,13 +257,12 @@ article .container{
   position: absolute;  
   color:white;
 }
-.bg-full {
-  background-color: rgba(0, 0, 0, 0.7);
+.bg-full {  
   position: relative;  
   text-align: center;
 }
 .square{
-  background: url('https://www.efteling.com/nl/-/media/images/nieuw-events/negen-pleinen-festijn-2019/1600x900-negen-pleinen-festijn-sfeerbeeld.jpg?h=550&amp;w=1600&amp;focuspoint=-0.2%2c0.1&amp;hash=A624EBE83AFF694C720E9334BDCFA944') no-repeat center center/cover;
+  background: url('https://www.efteling.com/nl/-/media/images/nieuw-events/negen-pleinen-festijn-2019/1600x900-negen-pleinen-festijn-sfeerbeeld.jpg?h=550&amp;w=1600&amp;focuspoint=-0.2%2c0.1&amp;hash=A624EBE83AFF694C720E9334BDCFA944') no-repeat center center/cover;  
 }
 .bg-full .arrow {
   top:-30px;
@@ -385,7 +330,7 @@ article .container{
 }
 .info .info-items > div > .back-btn a {
   display:inline-block;
-  padding:.5rem 4rem;
+  padding:.5rem 3rem;
   box-shadow:0 0 5px antiquewhite;
   border: 2px solid antiquewhite;
   border-radius: 5px;
@@ -398,6 +343,13 @@ article .container{
 .holiday {
   background: url('https://www.efteling.com/nl/-/media/images/nieuw-park/park/seizoenen/zomer/1600x550-loonsche-land-zomer-gezin.jpg?h=550&amp;w=1600&amp;hash=A4A61394D78CDB9A0FC1F99B0F44A74D') no-repeat center center/cover;
   
+}
+.dark-front{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.moments {
+  border-bottom:  1px solid lavender;
+  padding-bottom: 5rem;
 }
 .moments .container {
   position: relative;
@@ -449,10 +401,72 @@ article .container{
   transition: top .5s ease-in-out;
 }
 .moments .container .moments-btn {  
-  width: 100%;
-  /* text-align: center; */
+  width: 100%;  
   display:flex;
   justify-content: center;
   position: absolute;
   bottom:2%;  
+}
+footer {
+  font-family: sans-serif;
+}
+footer .container .contact,footer .container .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;  
+  grid-gap: 2rem;  
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid antiquewhite;
+}
+footer .container .contact a:hover,footer .container .links a:hover, footer .container .copyright a:hover{
+  color: #b71234
+}
+footer .container .links > div {
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: flex-start;
+}
+footer .container .links > div  * {
+  display:block;
+  margin-top: 1rem;
+  font-size:14px;
+  line-height: 2;
+}
+footer .container .links input {
+  padding: .5rem;
+  width: 100%;
+}
+footer .container .socialmedia {
+  padding: 1rem 0; 
+  border-bottom: 2px solid antiquewhite; 
+}
+footer .container .socialmedia .icons {
+  padding-top: 1rem;
+  float: right;
+}
+footer .container .socialmedia .icons .fab {
+  margin-right:1rem; 
+}
+footer .container .socialmedia .icons .fa-facebook-square:hover {
+  color:#3a5794;
+}
+footer .container .socialmedia .icons .fa-twitter-square:hover {
+  color: #2994c2;
+}
+footer .container .socialmedia .icons .fa-instagram:hover {
+  color:brown;
+}
+footer .container .socialmedia .icons .fa-youtube-square:hover {
+  color:red;
+}
+footer .container .socialmedia .icons .fa-linkedin:hover {
+  color:#006599;
+}
+footer .container .copyright {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  width: 60%;
 }
